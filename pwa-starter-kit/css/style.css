@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@font-face {
+  font-family: VAL;
+  src: url(VAL.otf);
+}
+html {
+  touch-action: manipulation;
+  box-sizing: border-box;
+}
+.button:hover {
+  color: orange;
+  transition: background-color 0.5s;
+  background-color: transparent;
+  font-family: VAL;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(101, 31, 64, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background-image: url(background.png);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.button {
+  background-color: rgb(177, 177, 177);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.button__op {
+  background-color: grey;
+}
+.button:hover {
+  background-color: transparent;
+  font-family: VAL;
+}
+
+.button__clr {
+  grid-column: span 3;
+  background-color: orange;
+}
+
+.button__sum {
+  grid-column: span 2;
+  background-color: orange;
+}
+
+.button__function {
+  background-color: orange;
+}
+.calculator {
+  background-color: rgb(62, 61, 61);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.header__title {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+  font-family: VAL;
+}
+
+.phone {
+  display: none;
+}
+.screen {
+  grid-column: span 4;
+  border: none;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 10px;
+  background-color: honeydew;
+  margin: 15px 0;
+  text-align: end;
+  font-family: VAL;
+}
+
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+  .header__title {
+    display: none;
+  }
+
+  .calculator {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    overflow: auto;
+  }
+  .screen {
+    padding: 10px;
+    background-color: honeydew;
+    margin: 15px 0;
+    text-align: end;
+  }
+}
+
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .main {
+    display: none;
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+}

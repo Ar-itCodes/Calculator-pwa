@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <header class="header"> 
+        <h1 class="header__title">Calculator</h1>
+        <p class="phone">Flip your phone.</p>
+    </header>
+    <main class="main">
+        <div class="calculator">
+            <input type="text" class="screen" readonly placeholder="start calculating">
+            <button class="button butzton__function button__clr button__clr--js" value="ac">AC</button>
+            <button class="button button__op button__op--js" value="/">&divide;</button>
+            <button class="button button__num button__num--js" value="1">1</button>
+            <button class="button button__num button__num--js" value="2">2</button>
+            <button class="button button__num button__num--js" value="3">3</button>
+            <button class="button button__op button__op--js" value="*">&times;</button>
+            <button class="button button__num button__num--js" value="4">4</button>
+            <button class="button button__num button__num--js" value="5">5</button>
+            <button class="button button__num button__num--js" value="6">6</button>
+            <button class="button button__op button__op--js" value="+">&plus;</button>
+            <button class="button button__num button__num--js" value="7">7</button>
+            <button class="button button__num button__num--js" value="8">8</button>
+            <button class="button button__num button__num--js" value="9">9</button>
+            <button class="button button__op button__op--js" value="-">&minus;</button>
+            <button class="button button__num button__num--js" value=".">.</button>
+            <button class="button button__num button__num--js" value="0">0</button>
+            <button class="button button__function button__sum button_sum--js" value="=">&equals;</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
