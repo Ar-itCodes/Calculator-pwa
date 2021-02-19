@@ -103,7 +103,7 @@ body {
   background-color: honeydew;
   margin: 15px 0;
   text-align: end;
-  font-family: VAL;
+  font-family: sans-serif;
 }
 
 @media only screen and (max-width: 450px) and (orientation: portrait) {
